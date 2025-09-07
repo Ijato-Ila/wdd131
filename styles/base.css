@@ -1,0 +1,82 @@
+
+/* Basic page styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* body font */
+  background-color: white; /* white background */
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ff1493; /* deep pink */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+#course-title {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif; /* heading font */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffc0cb; /* light pink on hover */
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif; /* headings use Poppins */
+}
+
+.card {
+  background-color: #ffc0cb; /* light pink cards */
+  border: 2px solid #ff1493; /* deep pink border */
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #ff1493; /* deep pink headings */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff1493; /* deep pink */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

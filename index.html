@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Ijato Precious-jane Okpen</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Ijato Precious-jane Okpen, simple homepage with about me and location cards.">
+  <meta name="author" content="Ijato">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Ijato-Ila</h1>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/91?lang=eng" target="_blank">Scripture</a>
+      <a href="final-project/" target="_blank">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Ijato</h1>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>Hello, my name is Ijato. I'm an aspiring software developer, and learning about websites is part of the process. It’s not always thrilling, but I’m committed to the journey. Outside of tech, I keep things simple and enjoy my own space.</p>
+      <img src="images/IJATSProfile.webp" alt="My profile picture">
+    </section>
+
+    <section class="card">
+      <h2>My Location</h2>
+      <p>I live in Cross River State, Nigeria. It’s a place where thick forests meet wild festivals. Between the Obudu hills and the Calabar Carnival, there’s always something loud or green happening.</p>
+      <img src="images/Calabar.webp" alt="Calabar, Cross River State, Nigeria">
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> | Ijato | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
