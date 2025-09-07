@@ -1,4 +1,3 @@
-
 /* Basic page styles */
 body {
   margin: 0;
@@ -70,6 +69,15 @@ h1, h2 {
   height: auto;
   margin-top: 0.5rem;
   border-radius: 4px;
+}
+
+/* Profile picture */
+#profile-pic {
+  width: 200px;   /* smaller profile picture */
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0.5rem auto; /* centers it in the card */
 }
 
 /* Footer */
