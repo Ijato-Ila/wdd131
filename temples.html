@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album – WDD 131 – Ijato Precious-jane Okpen</title>
+
+  <!-- Description for search engines and project info -->
+  <meta name="description" content="Temple Album project for WDD 131 by Ijato Precious-jane Okpen. Responsive photo album with a mobile hamburger menu and a dynamic footer." />
+  <meta name="author" content="Ijato Precious-jane Okpen">
+
+  <!-- Google Fonts same as week 01 (we use Poppins for titles, Roboto for body text) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS: mobile styles first, larger screen styles second -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- JavaScript (defer = wait until HTML loads before running) -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <!-- Page title -->
+    <h1 class="site-title">Temple Album</h1>
+
+    <!-- Hamburger button (☰ opens, ✕ closes). Only shows on small screens. -->
+    <button id="menu-btn" aria-controls="main-nav" aria-expanded="false" type="button">☰</button>
+
+    <!-- Navigation menu -->
+    <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="#old">Old</a>
+      <a href="#new">New</a>
+      <a href="#large">Large</a>
+      <a href="#small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Main page title -->
+    <h1 class="page-title">Home</h1>
+
+    <!-- Gallery of 9 temple pictures -->
+    <section class="gallery">
+      <figure>
+        <img src="images/temples/temple1.webp" alt="Temple 1 - Aba, Nigeria">
+        <figcaption>Aba, Nigeria</figcaption>
+      </figure>
+
+      <!-- Repeat this same figure pattern for all 9 temples -->
+      <figure>
+        <img src="images/temples/temple2.webp" alt="Temple 2">
+        <figcaption>Oquirrh Mountain, United States</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temples/temple3.webp" alt="Temple 3">
+        <figcaption>Albuquerque, United States</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temples/temple4.webp" alt="Temple 4">
+        <figcaption>Arequipa, Peru</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temples/temple5.webp" alt="Temple 5">
+        <figcaption>Bern, Switzerland</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temples/temple6.webp" alt="Temple 6">
+        <figcaption>Bountiful Utah Temple, United States</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temples/temple7.webp" alt="Temple 7">
+        <figcaption>Payson Utah Temple, United States</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temples/temple8.webp" alt="Temple 8">
+        <figcaption>Portland Oregon Temple, United States</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/temples/temple9.webp" alt="Temple 9">
+        <figcaption>Calgary Alberta Temple, Canada</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <!-- JavaScript will replace the year and last modified date -->
+    <p>&copy; <span id="currentyear"></span> | Ijato Precious-jane Okpen | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

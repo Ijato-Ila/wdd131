@@ -1,0 +1,49 @@
+/* temples-large.css - Bigger screen styles go here */
+@media (min-width: 800px) {
+  :root {
+    --pad: 2rem; /* more padding on bigger screens */
+  }
+
+  /* HEADER */
+  .site-header {
+    padding: 1rem 2rem;
+  }
+
+  /* Hide hamburger button on desktop */
+  #menu-btn {
+    display: none;
+  }
+
+  /* Show nav horizontally on desktop */
+  .main-nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1.25rem;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .main-nav a {
+    background: transparent;
+    padding: 0.2rem .4rem;
+    color: white;
+  }
+
+  /* Gallery = 3 columns on desktop */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 2rem 3rem;
+  }
+
+  /* Crop images so they look neat */
+  figure img {
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .page-title {
+    margin-top: 1.6rem;
+  }
+}

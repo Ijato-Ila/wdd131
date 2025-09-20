@@ -1,0 +1,116 @@
+/* temples.css - Mobile styles first (uses Week 01 fonts & theme) */
+
+/* Define our colors and sizes in one place */
+:root {
+  --primary: #ff1493; /* deep pink */
+  --accent: #ffc0cb;  /* light pink */
+  --bg: #ffffff;      /* white background */
+  --text: #222;       /* dark gray text */
+  --maxw: 1000px;     /* max width for content */
+  --pad: 1rem;        /* padding size */
+}
+
+/* Reset box model */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* HEADER */
+.site-header {
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .8rem var(--pad);
+}
+
+.site-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+/* HAMBURGER BUTTON (☰) */
+#menu-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* NAVIGATION MENU (hidden on mobile until button is clicked) */
+.main-nav {
+  display: none; /* hidden by default */
+  flex-direction: column;
+  gap: .4rem;
+  margin-top: .6rem;
+  padding: 0 var(--pad);
+}
+
+.main-nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: .5rem .6rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* When nav has the "open" class (set by JS), show it */
+.main-nav.open {
+  display: flex;
+}
+
+/* MAIN */
+.page-title {
+  text-align: center;
+  margin: 1.2rem 0 0.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Gallery grid - 1 column on small screens */
+.gallery {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--pad) 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.1rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto; /* allow images to resize naturally */
+  border-radius: 6px;
+}
+
+figcaption {
+  margin-top: .5rem;
+  font-size: .95rem;
+  color: var(--primary);
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: .8rem 1rem;
+  margin-top: 1.5rem;
+  font-size: .95rem;
+}
