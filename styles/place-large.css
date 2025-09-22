@@ -26,7 +26,7 @@
     height: 305px;
     background: rgba(255, 230, 240, 0.75);          /* soft pink background */
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: 14px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   }
 
@@ -36,7 +36,7 @@
     height:240px;
     background: rgba(255, 230, 240, 0.75);
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: 14px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
   }
 
