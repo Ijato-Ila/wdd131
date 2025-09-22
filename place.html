@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obudu Mountain Resort, Nigeria – WDD 131 – Ijato Precious-jane Okpen</title>
+  <meta name="description" content="Place page for WDD 131 by Ijato Precious-jane Okpen. Featuring Obudu Mountain Resort in Cross River State, Nigeria, with data, weather, and images.">
+  <meta name="author" content="Ijato Precious-jane Okpen">
+
+  <!-- Google Fonts (same as week 1 & 2: Poppins + Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Link to CSS files -->
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+
+  <!-- Link to JavaScript -->
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Obudu Mountain Resort</h1>
+    <p>Nigeria</p>
+  </header>
+
+  <main class="hero">
+    <!-- Hero background image -->
+    <figure>
+      <img 
+        src="images/place/obudu-small.webp" 
+        srcset="images/place/obudu-small.webp 500w, images/place/obudu-large.webp 1000w" 
+        sizes="(max-width: 640px) 100vw, 1000px"
+        alt="Beautiful view of Obudu Mountain Resort in Cross River State, Nigeria">
+      <figcaption>Scenic hills and landscapes of Obudu Mountain Resort.</figcaption>
+    </figure>
+
+    <!-- Overlay container for data and weather -->
+    <div class="overlay">
+      <section class="data">
+        <h2>About Obudu</h2>
+        <ul>
+          <li><span class="label">Country:</span> Nigeria</li>
+          <li><span class="label">State:</span> Cross River</li>
+          <li><span class="label">Established:</span> 1951</li>
+          <li><span class="label">Altitude:</span> ~1,600 meters above sea level</li>
+          <li><span class="label">Known for:</span> Cattle Ranch, Cable cars, cool weather, and rolling green hills.</li>
+        </ul>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+        <img src="images/place/weather-icon.svg" alt="Weather icon for Obudu" class="weather-icon">
+        <ul>
+          <li><span class="label">Temperature:</span> <span id="temp">16°C</span></li>
+          <li><span class="label">Conditions:</span> <span>Cool & Breezy</span></li>
+          <li><span class="label">Humidity:</span> <span>75%</span></li>
+          <li><span class="label">Wind:</span> <span id="wind">10 km/h</span></li>
+          <li><span class="label">Wind Chill:</span> <span id="windchill">N/A</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Ijato Precious-jane Okpen | Obudu Mountain Resort, Nigeria</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

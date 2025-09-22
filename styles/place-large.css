@@ -1,0 +1,55 @@
+/* place-large.css - Wider screen layout */
+/* Kicks in when screen is at least 640px wide */
+@media (min-width: 640px) {
+
+  /* Hero container grows taller for wide view */
+  .hero {
+    min-height: 450px;
+  }
+
+  /* Overlay turns into a grid with two columns */
+  .hero .overlay {
+    flex-direction: row;          /* side by side instead of stacked */
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 9rem;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 150px;
+    position: absolute;
+    left: 0; right: 0;
+  }
+
+  /* Data on the left */
+  .data {
+    flex: 1;
+    height: 305px;
+    background: rgba(255, 230, 240, 0.75);          /* soft pink background */
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+
+  /* Weather on the right */
+  .weather {
+    flex: 1;
+    height:240px;
+    background: rgba(255, 230, 240, 0.75);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
+
+  /* Hide the small SVG weather icon in wide view */
+  .weather-icon {
+    display: none;
+  }
+
+  /* Add pseudo-element (emoji icon) after "Weather" heading */
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 1.3rem;
+    margin-left: 0.3rem;
+    color: var(--primary);
+  }
+}

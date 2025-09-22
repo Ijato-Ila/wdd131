@@ -1,0 +1,123 @@
+/* Place.css - Mobile-first pink theme (consistent with Week 1 & 2) */
+
+/* Global color scheme */
+:root {
+  --primary: #ff1493;   /* Deep pink */
+  --accent: #ffc0cb;    /* Light pink */
+  --text: #222222;      /* Dark gray text */
+  --bg: #ffffff;        /* White background */
+}
+
+/* Reset margins and padding */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General body styles */
+body {
+  font-family: 'Poppins', sans-serif; /* same as Week 1 & 2 */
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 1rem;
+  text-align: center; /* keep content centered */
+}
+
+/* Page header */
+header {
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+
+
+
+/* Hero container */
+.hero {
+  position: relative;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Make the image fill the hero */
+.hero figure {
+  margin: 0;
+}
+
+.hero figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.hero figure figcaption {
+  display: none;
+}
+
+/* Overlay content (Data + Weather) */
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0; /* stretch over image */
+  display: flex;
+  flex-direction: column;   /* stack by default (mobile) */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+
+
+/* Data and weather boxes */
+.data,
+.weather {
+  background: var(--accent);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+/* Section titles */
+h2 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* List inside data and weather */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: var(--primary);
+}
+
+/* Weather icon styles */
+.weather-icon {
+  display: block;
+  width: 50px;             /* Adjust size */
+  margin: 0.5rem auto;     /* Center under Weather heading */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
