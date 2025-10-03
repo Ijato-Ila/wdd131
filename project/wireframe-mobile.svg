@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640">
+  <!-- Header -->
+  <rect x="8" y="8" width="344" height="48" rx="8" fill="#fff" stroke="#cbd5e1"/>
+  <!-- Hero -->
+  <rect x="24" y="72" width="312" height="120" rx="8" fill="#fff" stroke="#e2e8f0"/>
+  <!-- Portfolio -->
+  <rect x="24" y="208" width="312" height="64" rx="6" fill="#fff" stroke="#e2e8f0"/>
+  <!-- Blog -->
+  <rect x="24" y="288" width="312" height="96" rx="6" fill="#fff" stroke="#e2e8f0"/>
+  <!-- Contact/Footer -->
+  <rect x="24" y="400" width="312" height="64" rx="6" fill="#fff" stroke="#e2e8f0"/>
+</svg>
