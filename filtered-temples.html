@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album – Filtered</title>
+
+  <meta name="description" content="Filtered temple album with lazy loading and dynamic filters">
+  <meta name="author" content="Ijato Precious-jane Okpen">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Temple Album</h1>
+
+    <!-- Hamburger for mobile -->
+    <button id="menu-btn" aria-controls="main-nav" aria-expanded="false" type="button">☰</button>
+
+    <!-- Nav -->
+    <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Temple Album</h1>
+    <h2>Featured Temples</h2>
+
+    <!-- JS will inject all cards here -->
+    <section class="gallery"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="currentyear"></span> | Ijato Precious-jane Okpen | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

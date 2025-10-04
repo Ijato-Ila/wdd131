@@ -1,0 +1,35 @@
+/* filtered-temples-large.css - Desktop */
+@media (min-width: 800px) {
+  :root {
+    --pad: 2rem;
+  }
+
+  /* HEADER */
+  #menu-btn {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .main-nav a {
+    background: transparent;
+    padding: .2rem .4rem;
+  }
+
+  /* GALLERY - 3 columns */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 2rem 3rem;
+  }
+
+  figure img {
+    height: 160px;
+    object-fit: cover;
+  }
+}
