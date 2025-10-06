@@ -1,5 +1,9 @@
-let reviewCount = localStorage.getItem('reviewCount') || 0;
-reviewCount = parseInt(reviewCount) + 1;
-localStorage.setItem('reviewCount', reviewCount);
+// ===== Review Counter with localStorage =====
+window.addEventListener("DOMContentLoaded", () => {
+  let count = Number(localStorage.getItem("reviewCount")) || 0;
+  count++;
+  localStorage.setItem("reviewCount", count);
 
-document.getElementById('review-counter').textContent = reviewCount;
+  const counterElement = document.getElementById("reviewCounter");
+  counterElement.textContent = `Total reviews submitted: ${count}`;
+});
